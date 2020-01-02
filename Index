@@ -1,1 +1,4 @@
 https://manage.thunderforest.com/users/sign_up?plan=hobby-project
+
+=>https://www.thunderforest.com/docs/apikeys/
+=>https://tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=<insert-your-apikey-here>
