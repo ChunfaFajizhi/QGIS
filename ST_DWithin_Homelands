@@ -2,13 +2,21 @@
 ##My Place
 -79.662964,43.525243
 
-##
+## From Distance within
 SELECT *
 FROM tree_3857
 WHERE ST_DWithin(
         geom,
         ST_GeomFromText('POINT(-79.662964 43.525243)',3857),
         0.001
+      );
+      
+## From Polygan within
+SELECT *
+FROM tree_3857
+WHERE ST_Within(
+        geom,
+        ST_GeomFromText('POLYGON((-79.664050 43.525810,-79.658900 43.525608,-79.662022 43.523554,-79.664050 43.525810))',3857)       
       );
  
  ##SRID_4326
